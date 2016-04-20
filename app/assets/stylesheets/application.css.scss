@@ -28,13 +28,21 @@ h1, h2, h3, p {
 }
 
 .header {
-  height: 500px;
-  color: white;
+  color: #39474e;
   text-align: center;
-  margin: auto;
-  padding-top: 80px;
-  // background-image: asset_url("durham_skyline.png");
-  // background-size: 100%;
-  background-color: #39474e;
-  margin-bottom: 20px;
+  background-image: asset_url("durham.jpg");
+  background-size: 100%;
+  // position:fixed !important;
+  // position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  padding-top: 150px;
+  height: 900px;
+  margin-bottom:auto;
+}
+
+.list-group {
+  margin-top: 10px;
 }

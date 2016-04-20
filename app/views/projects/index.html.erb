@@ -1,15 +1,18 @@
 <div class="container-fluid header">
   <%= image_tag(asset_url("tiy-logo.png"), width: 200) %>
   <h1>Presentation Day - April 21, 2016</h1>
-  <h3>The Iron Yard, Durham Campus | Cohort 6</h3>
+  <h3>The Iron Yard - Durham Campus  |  Cohort 6</h3>
 </div>
 
-<ul class="list-group">
-  <% @projects.each do |project| %>
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <li class="list-group-item"> <h3> <%= project.name %> </h3> </li>
+<div class="container-fluid">
+  <h3><a name="projects">Projects:</a></h3>
+  <ul class="list-group">
+    <% @projects.each do |project| %>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <li class="list-group-item"> <h3> <%= project.name %> </h3> </li>
+        </div>
       </div>
-    </div>
-  <% end %>
-</ul>
+    <% end %>
+  </ul>
+</div>
