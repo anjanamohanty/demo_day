@@ -4,4 +4,16 @@ class TrackTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
+
+  test "tracks have many students" do
+
+    t_one = Track.create!(name: "Track One")
+    s_one = Student.create!(name: "Student One", track_id: t_one.id)
+    s_two = Student.create!(name: "Student Two", track_id: t_one.id)
+
+    assert_equal "Student One", t_one.students.first.name
+    assert_equal 2, t_one.students.count
+
+  end
+
 end

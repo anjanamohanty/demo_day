@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  description: MyText
-  website: MyString
+  name: "Project One"
+  description: "This is Project One"
+  website: "www.google.com"
   cohort_id: 1
 
 two:
-  name: MyString
-  description: MyText
-  website: MyString
+  name: "Project Two"
+  description: "This is Project Two"
+  website: "www.yahoo.com"
   cohort_id: 1
