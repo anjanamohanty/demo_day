@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'projects/index'
+
   namespace :admin do
     resources :projects
 resources :students
