@@ -1,6 +1,15 @@
-<h1>Projects#index</h1>
-<p>Find me in app/views/projects/index.html.erb</p>
+<div class="container-fluid header">
+  <%= image_tag(asset_url("tiy-logo.png"), width: 200) %>
+  <h1>Presentation Day - April 21, 2016</h1>
+  <h3>The Iron Yard, Durham Campus | Cohort 6</h3>
+</div>
 
-<% @projects.each do |project| %>
-  <h3> <%= project.name %> </h3>
-<% end %>
+<ul class="list-group">
+  <% @projects.each do |project| %>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <li class="list-group-item"> <h3> <%= project.name %> </h3> </li>
+      </div>
+    </div>
+  <% end %>
+</ul>
