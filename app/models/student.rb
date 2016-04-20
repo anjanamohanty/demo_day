@@ -4,4 +4,5 @@ class Student < ActiveRecord::Base
 
   validates :name, presence: :true
   validates :track_id, presence: :true
+  validates :project_id, presence: :true
 end
