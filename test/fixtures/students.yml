@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  track_id: 1
+  project_id: 1
+  github_link: MyString
+  twitter_link: MyString
+  email_address: MyString
+
+two:
+  name: MyString
+  track_id: 1
+  project_id: 1
+  github_link: MyString
+  twitter_link: MyString
+  email_address: MyString
