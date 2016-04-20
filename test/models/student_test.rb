@@ -1,9 +1,6 @@
 require 'test_helper'
 
 class StudentTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
 
   test "students belong to a single project" do
 
