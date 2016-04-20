@@ -14,9 +14,14 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import "font-awesome";
 
 h1, h2, h3, p {
   font-family: Helvetica;
+}
+
+p {
+  font-size: 16px;
 }
 
 .navbar, .navbar-default {
@@ -46,4 +51,32 @@ h1, h2, h3, p {
 
 .list-group {
   margin-top: 10px;
+}
+
+.btn-default {
+  color: white;
+  background-color: #39474e;
+}
+
+.call-to-action {
+  margin: 20px;
+}
+
+.img-circle {
+  background-color: gray;
+  height: 200px;
+  width: 200px;
+}
+
+.center {
+  text-align: center;
+}
+
+.center-content {
+  display: block;
+  margin: auto;
+}
+
+.member {
+  padding: 20px;
 }
