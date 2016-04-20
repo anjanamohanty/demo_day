@@ -25,22 +25,22 @@ class StudentDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
-    :project,
-    :track,
     :id,
     :name,
+    :project,
+    :track,
   ]
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
-    :project,
-    :track,
     :id,
     :name,
     :github_link,
     :twitter_link,
     :email_address,
+    :project,
+    :track,
     :created_at,
     :updated_at,
   ]
@@ -49,9 +49,9 @@ class StudentDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
+    :name,
     :project,
     :track,
-    :name,
     :github_link,
     :twitter_link,
     :email_address,
