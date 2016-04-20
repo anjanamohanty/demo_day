@@ -23,5 +23,11 @@ class StudentTest < ActiveSupport::TestCase
 
   end
 
+  test "students must have a name" do
+
+    s_one = Student.new()
+    refute s_one.save
+
+  end
 
 end
