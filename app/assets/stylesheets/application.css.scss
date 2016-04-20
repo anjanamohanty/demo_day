@@ -27,13 +27,14 @@ h1, h2, h3, p {
   padding-top: 20px;
 }
 
+
 .header {
   color: #39474e;
   text-align: center;
   background-image: asset_url("durham.jpg");
-  background-size: 100%;
-  // position:fixed !important;
-  // position:absolute;
+  background-size: cover;
+  // background-size: 100%;
+  width: inherit;
   top:0;
   right:0;
   bottom:0;
