@@ -8,7 +8,7 @@ class StudentTest < ActiveSupport::TestCase
   test "students belong to a single project" do
 
     p_one = Project.create!(name: "Project One", description: "This is Project One", website: "www.google.com")
-    s_one = Student.create!(name: "Student One", project_id: p_one.id)
+    s_one = Student.create!(name: "Student One", project_id: p_one.id, track_id: 1)
 
     assert_equal "Project One", s_one.project.name
 
@@ -27,6 +27,21 @@ class StudentTest < ActiveSupport::TestCase
 
     s_one = Student.new()
     refute s_one.save
+
+  end
+
+  test "students must belong to a track" do
+
+    t_one = Track.create!(name: "Track One")
+    s_one = Student.new()
+    s_one.name = "Student One"
+    s_one.project_id = "1"
+
+    refute s_one.save
+
+    s_one.track_id = t_one.id
+
+    assert s_one.save
 
   end
 
