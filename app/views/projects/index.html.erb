@@ -22,7 +22,7 @@
 
               <% project.students.each do |student| %>
                 <div class="col-md-3 member center">
-                  <%= image_tag("https://s3-us-west-2.amazonaws.com/ironyarddurham/headshots/byron_wall.jpg", class: "img-small") %>
+                  <%= image_tag("https://s3-us-west-2.amazonaws.com/ironyarddurham/headshots/#{student.name.downcase.gsub(" ","_")}.jpg", class: "img-small") %>
                   <h3> <%= student.name %> </h3>
 
                   <% if student.github_link %>
