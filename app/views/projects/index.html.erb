@@ -25,15 +25,15 @@
                   <%= image_tag("https://s3-us-west-2.amazonaws.com/ironyarddurham/headshots/#{student.name.downcase.gsub(" ","_")}.jpg", class: "img-small") %>
                   <h3> <%= student.name %> </h3>
 
-                  <% if student.github_link %>
+                  <% if student.github_link.length < 1 %>
                     <a href="<%= student.github_link %>" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
                   <% end %>
 
-                  <% if student.twitter_link %>
+                  <% if student.twitter_link.length < 1 %>
                     <a href="<%= student.twitter_link %>" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
                   <% end %>
 
-                  <% if student.email_address %>
+                  <% if student.email_address.length < 1 %>
                     <a href="mailto:<%= student.email_address %>"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
                   <% end %>
 
