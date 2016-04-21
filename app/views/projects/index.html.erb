@@ -22,11 +22,21 @@
 
               <% project.students.each do |student| %>
                 <div class="col-md-3 member center">
-                  <img src="https://pbs.twimg.com/profile_images/2644416813/6df368d1cda4331222e10bc5736705ec_400x400.jpeg" alt="" class="img-circle">
+                  <%= image_tag("https://s3-us-west-2.amazonaws.com/ironyarddurham/headshots/byron_wall.jpg", class: "img-small") %>
                   <h3> <%= student.name %> </h3>
-                  <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                  <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-                  <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+
+                  <% if student.github_link %>
+                    <a href="<%= student.github_link %>" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                  <% end %>
+
+                  <% if student.twitter_link %>
+                    <a href="<%= student.twitter_link %>" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                  <% end %>
+
+                  <% if student.email_address %>
+                    <a href="mailto:<%= student.email_address %>"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+                  <% end %>
+
                 </div>
               <% end %>
 
